@@ -1,7 +1,0 @@
-6000 x 3376
-
-@media (max-width:480px) 
-
-@media screen and (min-width:480px)
-
-max= 480PX (page mobile)
