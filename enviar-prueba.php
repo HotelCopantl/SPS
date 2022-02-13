@@ -9,12 +9,12 @@ $body = "Nombre: " . $nombre . "<br>Correo: " . $correo . "<br>Telefono: " . $te
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'Phpmailer/Exception.php';
-require 'Phpmailer/PHPMailer.php';
-require 'Phpmailer/SMTP.php';
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
 
 //Create an instance; passing `true` enables exceptions
-$mail = new Phpmailer(true);
+$mail = new PHPMailer(true);
  
 try {
     //Server settings
@@ -27,6 +27,7 @@ try {
     $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
+
     //Recipients
     $mail->setFrom('kenneth@copantl.com', $nombre);
     $mail->addAddress('kennethchavez794@gmail.com');     //Add a recipient
@@ -38,11 +39,20 @@ try {
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients   11-02-2021';
     $mail->CharSet = 'UTF-8';
     $mail->send();
+     
     echo '<script>
         alert("El mensaje se envió correctamente");
          window.history.go(-1);
          </script>';
+     header('Location:index.html');
+       
+    
+
         
 } catch (Exception $e) {
     echo 'Message could not be sent // No se pudo enviar el mensaje. Mailer Error: ', $mail->ErrorInfo;
 }
+
+
+    
+        
