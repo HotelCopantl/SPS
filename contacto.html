@@ -65,18 +65,17 @@
               <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
             </div>
           </div>
-          <form name="formulario-contact" netlify >
-            <label for="nombre">Nombre:</label>
-             <input type="text" name="nombre" id="nombre" />
-             <br />
-               <label for="email">Email:</label>
+          <form name="formulario" class="formulario column column--50" netlify >
+            <label for="" class="formulario__label">Nombre:</label>
+            <input type="text" class="formulario__input-txt" name="nombre">
+            <label for="" class="formulario__label">Correo:</label>
+            <input type="text" class="formulario__input-txt" name="correo">
+            <label for="" class="formulario__label">Teléfono:</label>
+            <input type="text" class="formulario__input-txt" name="telefono">
+            <label for="" class="formulario__label">Mensaje:</label>
+            <textarea name="mensaje" id="" cols="30" rows="10" class="formulario__textarea"></textarea>
+            <input type="submit" class="btn formulario__btn" value="Enviar">
 
-                <input type ="email" name="email" id="email" />
-                <br />
-                 <label for="mensaje">Mensaje:</label>
-                 <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                <br />
-                <input type ="submit" value="Enviar" />
 
           </form>
         </div>
@@ -110,4 +109,4 @@
     <script src="js/modal.js"></script>
     
 </body>
-</html>
+</html> 
