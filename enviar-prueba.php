@@ -6,8 +6,8 @@ $mensaje = $_POST["mensaje"];
 
 $body = "Nombre: " . $nombre . "<br>Correo: " . $correo . "<br>Telefono: " . $telefono . "<br>Mensaje: " . $mensaje;
 
-use Phpmailer\Phpmailer\Phpmailer;
-use Phpmailer\Phpmailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 require 'Phpmailer/Exception.php';
 require 'Phpmailer/PHPMailer.php';
