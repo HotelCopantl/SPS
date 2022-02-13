@@ -6,12 +6,12 @@ $mensaje = $_POST["mensaje"];
 
 $body = "Nombre: " . $nombre . "<br>Correo: " . $correo . "<br>Telefono: " . $telefono . "<br>Mensaje: " . $mensaje;
 
-use https://github.com/HotelCopantl/SPS/tree/main/Phpmailer/PHPMailer;
-use https://github.com/HotelCopantl/SPS/tree/main/Phpmailer/Exception;
+use https://github.com/HotelCopantl/SPS/tree/main/Phpmailer/PHPMailer/PHPMailer;
+use https://github.com/HotelCopantl/SPS/tree/main/Phpmailer/PHPMailer/Exception;
 
-require 'PHPMailer/Exception.php';
-require 'PHPMailer/PHPMailer.php';
-require 'PHPMailer/SMTP.php';
+require 'https://github.com/HotelCopantl/SPS/tree/main/Phpmailer/PHPMailer/Exception.php';
+require 'https://github.com/HotelCopantl/SPS/tree/main/Phpmailer/PHPMailer/PHPMailer.php';
+require 'https://github.com/HotelCopantl/SPS/tree/main/Phpmailer/PHPMailer/SMTP.php';
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
